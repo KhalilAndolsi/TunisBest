@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/TunisBest/static/css/main.96b3aa66.css",
-    "main.js": "/TunisBest/static/js/main.3f5289b4.js",
+    "main.js": "/TunisBest/static/js/main.9ff8492a.js",
     "index.html": "/TunisBest/index.html",
     "main.96b3aa66.css.map": "/TunisBest/static/css/main.96b3aa66.css.map",
-    "main.3f5289b4.js.map": "/TunisBest/static/js/main.3f5289b4.js.map"
+    "main.9ff8492a.js.map": "/TunisBest/static/js/main.9ff8492a.js.map"
   },
   "entrypoints": [
     "static/css/main.96b3aa66.css",
-    "static/js/main.3f5289b4.js"
+    "static/js/main.9ff8492a.js"
   ]
 }
