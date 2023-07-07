@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/TunisBest/static/css/main.96b3aa66.css",
+    "main.js": "/TunisBest/static/js/main.a5ffbde1.js",
+    "index.html": "/TunisBest/index.html",
+    "main.96b3aa66.css.map": "/TunisBest/static/css/main.96b3aa66.css.map",
+    "main.a5ffbde1.js.map": "/TunisBest/static/js/main.a5ffbde1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.96b3aa66.css",
+    "static/js/main.a5ffbde1.js"
+  ]
+}
