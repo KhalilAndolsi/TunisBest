@@ -8,9 +8,9 @@ import Favorites from './components/favorites/Favorites'
 
 function App() {
   return (
-    <Router basename='/'>
+    <Router>
         <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="" element={<Home />} />
             <Route path="/movie/:id" element={<TheMovie />} />
             <Route path="/series/:id/:s/:ep" element={<TheSerie />} />
             <Route path="/search/:search" element={<Search />} />
