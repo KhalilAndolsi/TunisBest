@@ -1,0 +1,91 @@
+.searchListMovies,
+.searchListSeries {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--redT);
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.searchListMovies::-webkit-scrollbar,
+.searchListSeries::-webkit-scrollbar {
+  display: none;
+}
+
+.searchListMovies a,
+.searchListSeries a {
+  overflow: hidden;
+  height: 350px;
+  position: relative;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.searchListMovies a img,
+.searchListSeries a img {
+  height: 100%;
+  width: 100%;
+}
+
+.lists a .infos {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #17171790;
+  color: var(--white);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.lists a .infos h2 {
+  padding: 10px 5px;
+  font-size: 18px;
+  line-height: 1;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.lists a .infos div {
+  width: fit-content;
+  position: absolute;
+  right: 0;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.lists a .infos div span {
+  margin-left: 5px;
+}
+.lists a .infos div i {
+  color: var(--gold);
+}
+
+.lists a .infos .playIcon {
+  font-size: 35px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--red);
+  transition: 0.2s;
+}
+.lists a .infos .playIcon:hover {
+  transform: translate(-50%, -50%) scale(1.3);
+  color: var(--white);
+}
+
+.lists a:hover .infos {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .searchListMovies a,
+  .searchListSeries a {
+    height: 450px;
+  }
+}

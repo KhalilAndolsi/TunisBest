@@ -1,0 +1,136 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 20px;
+  position: relative;
+}
+
+header h2.logo {
+  font-size: 30px;
+  padding: 10px;
+}
+
+header h2.logo span:first-of-type {
+  color: var(--dark);
+}
+header h2.logo span:last-of-type {
+  color: var(--red);
+}
+
+header div.search {
+  width: 30%;
+  position: relative;
+  display: flex;
+  height: 40px;
+}
+header div.search * {
+  border: 1px solid var(--dark);
+  outline: none;
+  background-color: transparent;
+}
+header div.search button {
+  display: flex;
+  overflow: hidden;
+}
+header div.search button a {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header div.search button a,
+header div.search button i{
+  color: var(--dark);
+  border: none;
+}
+header div.search input {
+  width: 90%;
+  border-radius: 50px 0 0 50px;
+  padding: 0 15px;
+  font-size: 17px;
+  color: var(--dark);
+}
+header div.search button {
+  width: 10%;
+  border-left: 0;
+  border-radius: 0 50px 50px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+header div.search button:hover {
+  background-color: var(--red);
+}
+header div.search button:hover a i {
+  color: var(--white);
+}
+
+header ul,
+header ul li {
+  display: flex;
+}
+
+header ul li a {
+  color: var(--dark);
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 55px;
+  transition: 0.2s;
+}
+header ul li a:hover {
+  background-color: var(--redT);
+}
+
+header .bars {
+  display: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  color: var(--dark);
+  cursor: pointer;
+}
+
+@media (max-width: 926px) {
+  header ul {
+    display: none;
+  }
+  header .bars {
+    display: block;
+  }
+  header .search {
+    flex: 1;
+    padding: 0 25px;
+  }
+  header .search button {
+    width: 15% !important;
+    font-size: 14px;
+  }
+  header h2.logo {
+    padding: 10px 0;
+  }
+  header h2.logo span {
+    font-size: 25px;
+  }
+  header ul {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--white);
+    width: 100%;
+    z-index: 99999;
+    flex-direction: column;
+    transform: translateY(0);
+    transition: 0.6s;
+  }
+  header ul a {
+    width: 100%;
+    text-align: center;
+  }
+  header ul.hide {
+    transform: translateY(-200%);
+    background-color: var(--dark);
+  }
+}

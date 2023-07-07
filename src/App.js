@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Home from './components/home/Home'
+import Search from './components/search/Search'
+import TheMovie from './components/section/movie/TheMovie'
+import TheSerie from './components/section/serie/TheSerie'
+import Favorites from './components/favorites/Favorites'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router basename='/'>
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/movie/:id" element={<TheMovie />} />
+            <Route path="/series/:id/:s/:ep" element={<TheSerie />} />
+            <Route path="/search/:search" element={<Search />} />
+            <Route path="/favorites" element={<Favorites />} />
+            <Route path="*" element={<h1>404</h1>} />
+        </Routes>
+    </Router>
+  )
 }
 
-export default App;
+export default App

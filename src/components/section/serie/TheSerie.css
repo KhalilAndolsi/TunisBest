@@ -1,0 +1,94 @@
+.seasons {
+  background-color: var(--dark);
+  color: var(--white);
+  border-radius: 8px;
+}
+
+.seasons .top {
+  display: flex;
+  flex-flow: row nowrap;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.seasons .top::-webkit-scrollbar {
+  display: inline !important;
+  height: 10px;
+}
+.seasons .top::-webkit-scrollbar-thumb {
+  background-color: var(--whiteT);
+  border-radius: 50px;
+}
+
+
+.seasons .top a {
+  background-color: var(--red);
+  margin: 5px;
+  flex: 1;
+  min-width: 100px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 35px;
+  color: var(--white);
+  font-size: 18px;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.seasons .top a:active,
+.seasons .top a:hover {
+  filter: brightness(70%);
+}
+
+.seasons .down {
+  padding: 5px;
+  max-height: 450px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.seasons .down a {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 5px 0;
+  background-color: var(--white);
+  color: var(--dark);
+  overflow: hidden;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+.seasons .down a:hover,
+.seasons .down a:active {
+  filter: brightness(70%);
+}
+.seasons .down a img {
+  width: 60px;
+  height: 80px;
+  object-fit: cover;
+}
+.seasons .down a h3 {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.seasons .down a button {
+  width: 60px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.seasons .down a button:active,
+.seasons .down a button:hover {
+  background-color: var(--darkT);
+  color: var(--white);
+}

@@ -1,0 +1,43 @@
+https://api.themoviedb.org/3/trending/all/day?api_key=0837e565ad5cfe363d2809af848fa88c&language=en-US
+
+https://api.themoviedb.org/3/movie/now_playing?api_key=0837e565ad5cfe363d2809af848fa88c&language=en-US&page=1
+
+https://api.themoviedb.org/3/movie/popular?api_key=0837e565ad5cfe363d2809af848fa88c&language=en-US&page=1
+
+https://api.themoviedb.org/3/movie/455476?api_key=0837e565ad5cfe363d2809af848fa88c&language=en-US
+
+?api_key=0837e565ad5cfe363d2809af848fa88c&
+
+https://image.tmdb.org/t/p/w500
+
+https://api.themoviedb.org/3/discover/movie?api_key=0837e565ad5cfe363d2809af848fa88c&with_genres=28
+
+https://api.themoviedb.org/3/tv/1396/season/1?api_key=0837e565ad5cfe363d2809af848fa88c&language=en-US
+
+
+/******************************* this note very important ********************************/
+
+i data 9bal matji il  carousel mte3 swiper maynajamch y7adid il preview
+donc fil condiction ? <element/> : undefined 
+badil il undefined b fake elements tmathil loader
+
+
+/***************************************************************/
+
+<div className='showScreen'>
+  <iframe src={`https://autoembed.to/movie/tmdb/${id}`} allowFullScreen title='movie'></iframe>
+</div>
+
+/***************************************************************/
+
+<Link to={`/movie/${data.id}`}>
+  <img src={`https://image.tmdb.org/t/p/w500${data.poster_path}`} alt={data.title} />
+  <div className="infos">
+    <h2>{data.title}</h2>
+    <div>
+      <i className="fa-solid fa-star"></i>
+      <span>{data.vote_average.toFixed(1)}</span>
+    </div>
+    <i className="fa-regular fa-circle-play playIcon"></i>
+  </div>
+</Link>

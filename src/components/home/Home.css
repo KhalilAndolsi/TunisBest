@@ -1,0 +1,225 @@
+.coverCarousel .swiper-pagination-bullet {
+  background-color: var(--gray) !important;
+  width: 15px !important;
+  height: 5px !important;
+  margin: 0 2.5px !important;
+  border-radius: 50px !important;
+}
+
+.coverCarousel .item {
+  background-color: var(--dark);
+  color: var(--white);
+  height: 400px;
+}
+
+.coverCarousel .item .bg {
+  z-index: -1;
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: brightness(40%);
+}
+
+.coverCarousel .item .card {
+  display: flex;
+  position: relative;
+  left: 30px;
+  top: 50px;
+  width: 70%;
+}
+
+.coverCarousel .item .card img {
+  height: 250px;
+  border-radius: 12px;
+  margin: 10px;
+}
+.coverCarousel .item .card div h2.title {
+  padding-top: 10px;
+  margin: 0;
+  line-height: 1.6;
+}
+.coverCarousel .item .card div p.overview {
+  font-size: 18px;
+  line-height: 1.4;
+  flex: 1;
+  max-height: 50px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.coverCarousel .item .card div p.overview::-webkit-scrollbar {
+  display: none;
+}
+
+
+.coverCarousel .item .card div.rate {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 5px;
+  align-items: center;
+  font-size: 30px;
+}
+.coverCarousel .item .card div.rate i {
+  color: var(--gold);
+}
+
+.coverCarousel .item button.play {
+  position: absolute;
+  right: 75px;
+  bottom: 75px;
+  display: flex;
+  white-space: nowrap;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border: 1px solid var(--white);
+  transition: 0.3s;
+}
+.coverCarousel .item button.play a {
+  padding: 15px 25px;
+  background-color: transparent;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 15px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.coverCarousel .item button.play a span {
+  padding-left: 10px;
+}
+.coverCarousel .item button.play a i {
+  margin-right: 5px;
+  font-size: 20px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.coverCarousel .item button.play:hover {
+  border-color: transparent;
+}
+.coverCarousel .item button.play:hover a {
+  background-color: var(--white);
+  color: var(--dark);
+}
+
+@media (max-width: 767px) {
+  .coverCarousel .item .card {
+    width: 100%;
+    left: 0;
+    top: 30px;
+    padding-right: 20px;
+    flex-direction: column;
+  }
+  .coverCarousel .item .card img {
+    width: 200px;
+    margin: 0 auto;
+  }
+  .coverCarousel .item .card div h2.title {
+    font-size: 18px;
+    text-align: center;
+  }
+  .coverCarousel .item .card div p.overview {
+    display: none;
+  }
+  .coverCarousel .item button.play {
+    left: 50%;
+    bottom: 35px;
+    width: fit-content;
+    height: fit-content;
+    transform: scale(.8) translateX(-60%);
+  }
+  .coverCarousel .item .card div h5 {
+    display: none;
+  }
+  .coverCarousel .item .card div .rate {
+    display: none;
+  }
+}
+
+.homeParts {
+  padding: 10px 0;
+}
+
+.homeParts .partOfCards {
+  padding: 10px;
+}
+.homeParts .card {
+  background-color: var(--dark);
+  color: var(--white);
+  text-align: center;
+  border-radius: 8px;
+  height: 300px;
+  width: 200px;
+  margin: 5px 10px;
+  overflow: hidden;
+  position: relative;
+} 
+
+.homeParts .card a {
+  color: var(--white);
+}
+
+.homeParts .card a img {
+  height: 100%;
+  min-width: 100%;
+}
+
+.homeParts .card a div {
+  height: 100%;
+  width: 100%;
+  background-color: var(--darkT);
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: 0.2s;
+}
+.homeParts .card a:hover div {
+  opacity: 1;
+}
+
+.homeParts .card a div .title {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  text-align: start;
+  line-height: 1;
+}
+
+.homeParts .card a div span {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+}
+
+.homeParts .card a div span i {
+  color: var(--gold);
+  margin-right: 3px;
+}
+
+.homeParts .card a div .playIcon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--red);
+  transition: 0.2s;
+}
+.homeParts .card a div .playIcon:hover {
+  transform: translate(-50%, -50%) scale(1.4);
+  color: var(--white);
+}
+
+.homeParts .titleOfPart {
+  padding: 0 15px;
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
