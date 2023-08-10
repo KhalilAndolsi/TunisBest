@@ -8,7 +8,7 @@ import Favorites from './components/favorites/Favorites'
 
 function App() {
   return (
-    <Router basename='/TunisBest'>
+    <Router basename='/'>
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/movie/:id" element={<TheMovie />} />
