@@ -14,7 +14,7 @@ function Footer() {
           <br/>ama matista3malch il website hedha bech titfarij fi 7ajet mo5alfa li din al islem
           <br/><b>" وَلَا تَقْرَبُوا الزِّنَا إِنَّهُ كَانَ فَاحِشَةً وَسَاءَ سَبِيلًا "</b>
         </p>
-        <h4>created by khalil andolsi | V 1.0.0</h4>
+        <h4>created by khalil andolsi | V 0.1.0</h4>
         <div className="box">
           <span><a href="https://www.facebook.com/khalil.andolsi.161" target='_blanck'><span><i className="fa-brands fa-facebook-f fa-1x"></i></span></a></span>
           <span><a href="https://www.instagram.com/khalil.161/" target='_blanck'><span><i className="fa-brands fa-instagram fa-1x"></i></span></a></span>
